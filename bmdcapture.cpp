@@ -291,7 +291,7 @@ int usage(int status)
         {
             char *          displayModeString = NULL;
 
-            result = displayMode->GetName((const char **) &displayModeString);
+            result = displayMode->GetName((const __CFString **) &displayModeString);
             if (result == S_OK)
             {
                 BMDTimeValue frameRateDuration, frameRateScale;
